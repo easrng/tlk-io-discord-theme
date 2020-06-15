@@ -101,6 +101,8 @@ aside.aside:not(:root){
     top: 0;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 span#channel {
@@ -216,4 +218,47 @@ button#scroll_down::after{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.participants:not(:root) {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-secondary);
+    border: none;
+    border-radius: 0;
+    max-height: initial;
+}
+
+.list--participant .list-item {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    height: 42px;
+    padding: 0 8px;
+    max-width: initial;
+    margin: 4px 8px;
+}
+
+span.list-item-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background: var(--background-secondary-alt);
+}
+
+span.list-item-name {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-normal)
+}
+
+.list--participant .list-item:hover {
+    background-color: rgba(79,84,92,0.16);
+    cursor: pointer;
 }
