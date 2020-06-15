@@ -44,8 +44,9 @@
     --deprecated-text-input-border-hover: #040405;
     --deprecated-text-input-border-disabled: #202225;
     --deprecated-text-input-prefix: #dcddde;
-        font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
     text-rendering: optimizeLegibility;
+    background: var(--background-primary);
 }
 
 header#header {
