@@ -262,3 +262,65 @@ span.list-item-name {
     background-color: rgba(79,84,92,0.16);
     cursor: pointer;
 }
+
+.time::after {
+    content: "";
+}
+.post::before {
+    display:none;
+}
+
+dl.post:not(:root) {
+    border: none;
+    background: transparent;
+    background-color: transparent;
+    border-radius:0;
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+dt.post-meta {
+    position: static;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+a.post-name:not(:root) {
+    position: static;
+    order: 2;
+    color: var(--text-normal);
+    width: 100%;
+    max-width: initial;
+    font-weight: 500;
+}
+
+.post-reply.js-reply {
+    order: 1;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: calc(100% + 20px);
+    top: 0;
+}
+
+button.post-reply-button {position: absolute;top: 0;left: 0;width: 100%;height: 100%;border-radius: 50%;margin: 0;padding: 0;}
+
+.post-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+dd.post-message {
+    padding: 0;
+}
+
+div#chat {
+    width: 100%;
+    padding: 60px 40px 0 40px;
+    margin: 0;
+}
